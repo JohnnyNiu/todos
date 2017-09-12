@@ -1,11 +1,14 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import datetime
+from pathlib import Path
 from subprocess import call
 
-DIR='/Users/xiaomingniu/Documents/todos/'
+
+home = str(Path.home())
+DIR=home+'/Documents/todos/'
 
 now = datetime.datetime.now()
-now_str = now.strftime('%Y-%m-%d-%a-%H:%M:%S')
+now_str = now.strftime('%Y-%m-%d-%a-%H-%M-%S')
 
 file_name = "Todo-%s.md"%now_str
 abslute_path = DIR+file_name
