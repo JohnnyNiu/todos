@@ -19,7 +19,7 @@ content="\n"
 for i in range(0,5):
     content+="- [ ] \n"
 
-content+='\n\n'
+content+='\n\n\n'
 
 content+="### Notes\n"
 
